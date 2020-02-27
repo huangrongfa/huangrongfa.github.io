@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="前言 利用宅在家里的机会，把自己经常用的一些Linux基础命令整理一下，方便自己日后查阅，哈哈，好记性不如烂笔头……^_^  ls 该命令通常用来查看文件夹中的所有文件;ls -a 该命令通常用来查看文件夹中的隐藏文件;man 查看帮助信息（例如：man ls）;echo  该命令在终端输出字符串;date 查看当前系统时间;reboot 命令用于重启系统;Poweroff 命令用于关闭系统;w">
+  <meta name="description" content="前言 利用宅在家里的机会，把自己经常用的一些Linux基础命令整理一下，方便自己日后查阅，哈哈，好记性不如烂笔头……^_^">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux 常用命令整理">
 <meta property="og:url" content="http://yoursite.com/2020/02/05/list-blog/index.html">
 <meta property="og:site_name" content="牧羊少年の博客">
-<meta property="og:description" content="前言 利用宅在家里的机会，把自己经常用的一些Linux基础命令整理一下，方便自己日后查阅，哈哈，好记性不如烂笔头……^_^  ls 该命令通常用来查看文件夹中的所有文件;ls -a 该命令通常用来查看文件夹中的隐藏文件;man 查看帮助信息（例如：man ls）;echo  该命令在终端输出字符串;date 查看当前系统时间;reboot 命令用于重启系统;Poweroff 命令用于关闭系统;w">
+<meta property="og:description" content="前言 利用宅在家里的机会，把自己经常用的一些Linux基础命令整理一下，方便自己日后查阅，哈哈，好记性不如烂笔头……^_^">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-05T09:33:05.000Z">
 <meta property="article:modified_time" content="2020-02-09T08:06:30.000Z">
@@ -216,8 +216,9 @@
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>利用宅在家里的机会，把自己经常用的一些Linux基础命令整理一下，方便自己日后查阅，哈哈，好记性不如烂笔头……^_^</p>
 </blockquote>
-<p>ls 该命令通常用来查看文件夹中的所有文件;<br>ls -a 该命令通常用来查看文件夹中的隐藏文件;<br>man 查看帮助信息（例如：man ls）;<br>echo  该命令在终端输出字符串;<br>date 查看当前系统时间;<br>reboot 命令用于重启系统;<br>Poweroff 命令用于关闭系统;<br>wget 在终端中下载网络文件;<br>ps 命令用于查看系统中的进程状态<br>top 用于动态地监视进程活动与系统负载等信息<br>free 显示内存使用量信息<br>uptime 用于查看系统的负载信息<br>kill 命令用于终止某个指定PID的服务进程(例如：kill -1892)<br>killall 终止某个指定名称的服务所对应的全部进程<br>ifconfig 获取网卡配置与网络状态等信息<br>uname 用于查看系统内核与系统版本等信息<br>last 查看所有系统的登陆记录<br>history 用于显示历史执行过的命令<br>who 查看当前登入主机的用户终端信息<br>pwd 显示用户当前所处的工作目录<br>cd 切换工作路径<br>cat 查看纯文本文件（内容较少）<br>more 用于查看纯文本文件(内容较多)，注：只能向前移动查看；<br>less  查看文件<br>head 查看纯文本文档的前N行;<br>tail 查看纯文本文档的后N行或持续刷新内容;<br>diff 用于比较多个文本文件的差异;<br>touch 创建文件；<br>mkdir 创建文件目录；<br>mv 剪切文件或将文件重命名；<br>rm 用于删除文件或目录；<br>file 用来识别文件类型，也可用来辨别一些文件的编码格式<br>find 命令用于按照指定条件来查找文件 (例如： find -name mysql)<br>tar 用于对文件进行打包压缩或解压<br>cp命令用于复制文件或目录;<br>grep 在文本中执行关键词搜索，并显示匹配的结果;<br>wc命令用于统计指定文本的行数、字数、字节数;</p>
 <a id="more"></a>
+
+<p>ls 该命令通常用来查看文件夹中的所有文件;<br>ls -a 该命令通常用来查看文件夹中的隐藏文件;<br>man 查看帮助信息（例如：man ls）;<br>echo  该命令在终端输出字符串;<br>date 查看当前系统时间;<br>reboot 命令用于重启系统;<br>Poweroff 命令用于关闭系统;<br>wget 在终端中下载网络文件;<br>ps 命令用于查看系统中的进程状态<br>top 用于动态地监视进程活动与系统负载等信息<br>free 显示内存使用量信息<br>uptime 用于查看系统的负载信息<br>kill 命令用于终止某个指定PID的服务进程(例如：kill -1892)<br>killall 终止某个指定名称的服务所对应的全部进程<br>ifconfig 获取网卡配置与网络状态等信息<br>uname 用于查看系统内核与系统版本等信息<br>last 查看所有系统的登陆记录<br>history 用于显示历史执行过的命令<br>who 查看当前登入主机的用户终端信息<br>pwd 显示用户当前所处的工作目录<br>cd 切换工作路径<br>cat 查看纯文本文件（内容较少）<br>more 用于查看纯文本文件(内容较多)，注：只能向前移动查看；<br>less  查看文件<br>head 查看纯文本文档的前N行;<br>tail 查看纯文本文档的后N行或持续刷新内容;<br>diff 用于比较多个文本文件的差异;<br>touch 创建文件；<br>mkdir 创建文件目录；<br>mv 剪切文件或将文件重命名；<br>rm 用于删除文件或目录；<br>file 用来识别文件类型，也可用来辨别一些文件的编码格式<br>find 命令用于按照指定条件来查找文件 (例如： find -name mysql)<br>tar 用于对文件进行打包压缩或解压<br>cp命令用于复制文件或目录;<br>grep 在文本中执行关键词搜索，并显示匹配的结果;<br>wc命令用于统计指定文本的行数、字数、字节数;</p>
 
     </div>
 
