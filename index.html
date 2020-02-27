@@ -155,6 +155,103 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/26/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/timg.jpeg">
+      <meta itemprop="name" content="RongFa">
+      <meta itemprop="description" content="时光不会辜负每一个平静而努力的人">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="牧羊少年の博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/26/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" class="post-title-link" itemprop="url">git学习笔记整理</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-26 10:40:35" itemprop="dateCreated datePublished" datetime="2020-02-26T10:40:35+08:00">2020-02-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-27 14:28:17" itemprop="dateModified" datetime="2020-02-27T14:28:17+08:00">2020-02-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>git是一个开源的分布式版本控制系统，在现在的前端开发中，是经常使用的版本控制工具，所以，熟练的掌握它的使用，可以提升我们的工作效率，也是我们自身能力的提现，现在整理一下，我在工作中使用的一些基础指令。</p>
+</blockquote>
+<p>git init 这个命令一般是用来初始化git仓库的；<br>git config – system 该命令是给<b style="color:red">当前用户</b>一次性设置邮箱和用户名；<br>git config – local 该命令是给<b style="color:red">当前项目</b>一次性设置邮箱和用户名；<br>git config – loacal user.name ‘你的名字’；<br>git config – loacal user.eamil ‘你的邮箱’；</p>
+<p>git add . 该命令可以对修改的文件，进行跟踪；<br>git commit - m ‘提交注释’ 该命令是对提交信息，做出说明；<br>git push 该命令推送代码到远程仓库（改变指针）；<br>git status 查看当前文件的状态；</p>
+<p>git pull 此命令用户拉取最新的代码，也就相当于 git fetch + git merge</p>
+<p>git branch 查看当前分支；<br>git branch ‘分支名字’ 该命令可以创建分支；<br>git checkout 用来切换分支；也可以简写 git branch -b ‘分支名字’；<br>git branch -d ‘分支名字’  该命令删除分支（<b style="color:red">注：自己不能删除自己</b>）,需要切换分支才可以；<br>git branch -D ‘分支名字’ 表示强制删除分支；<br>git branch -v 查看分支的信息,通常是sha1值；</p>
+<p>git rm ‘.txt’ 删除已经提交的文件（删除之后，文件回到暂存区）&amp;&amp; git commit -m ‘.txt’ 表示彻底删除该文件；(分为2步操作)；</p>
+<p>git merge 这个用来合并分支；<br>git log &amp;&amp; git log –graph &amp;&amp; git reflog 可以查看提交的日志信息；<br>git reset –hard HEAD^  此命令表示回退到某一次commit，^表示一个版本，也可以通过sha1值来进行回退。（例如： git reset –head e82f00）；<br>git commit –amend 该命令可以用来修改commit提交的信息；</p>
+<p>git stash 该命令可以保存现场（未完成的功能，可以执行这个命令），也就是临时保存；<br>git stash list 查看保存的记录；<br>git stash pop 释放记录(将原来的保存，只用于还原内容)；</p>
+<p>git tag 该命令用来打一个标签(例如： git tag v1.0)；<br>git tag -d ‘标签名称’  该命令用来删除一个标签；</p>
+<p>git blname ‘**.txt’ 查看提交的详细信息（包括作者，改动的具体位置）<br>git diff 比较区中的文件区别（对象区和工作区）；<br>git cherry-pick 如果发现写错了分支的代码，需要转移到另外一个分支，可以使用此命令,该命令是复制操作，原有的分支代码，还会继续存在（<b style="color:red">注:sha1值会发生变化</b>）；</p>
+<p>git rebase 该命令用来合并分支，也称为变基操作，如果是自己独有的分支，建议使用这个命令来合并分支；（如果产生了冲突，按照正常的解决冲突的步骤，然后在执行 git rebase –continue）；</p>
+<p>git rebase –abort 表示回到rebase之前的状态；</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/26/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/25/plane/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -635,12 +732,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
